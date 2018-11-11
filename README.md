@@ -20,6 +20,8 @@
 
    Link **prototype** bisa dilihat [di sini](https://xd.adobe.com/view/abdbb7cd-f1c4-4adf-4ab1-ecf08936fb64-ddea/?fullscreen)
 
+
+
    Link **biodata** bisa dilihat [di sini](bit.ly/BioQuantaWEB)
 
 
