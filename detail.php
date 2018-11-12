@@ -1,5 +1,8 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+
+<?php
+	$absen = $_GET['absen'];
+?>
 
 <head>
 <title>QUANTA 2018</title>
@@ -14,7 +17,8 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
-<body>    
+<body>
+
 <!-- nav-bar -->
 <div class="quanta-top">
   <div class="nav-bar">
@@ -29,13 +33,36 @@
 </div>
 
 <div class="container">
-	<h1 id="nav-btn">Biodata</h1>
-  <div class="row">
-    <div id="column" style="position:relative; padding-top:180px; padding-left: 30px;">
-    </div>
-  </div>
+	<div id="content"></div>
 </div>
 
-<script src="script.js"> </script>
+<script>
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+				var listMembers = JSON.parse(this.responseText);
+				var absen = "<?php echo $absen ?>";
+				var toOutput = '';
+				var isFound = false;
+				
+				for (i = 0; i < listMembers.length; ++i) {
+					if (listMembers[i].absen == absen) {
+						toOutput += '<img src="img/' + absen + '.png" alt="" /><br>';
+						toOutput += '<h2>' + listMembers[i].nama + '</h2>' + listMembers[i].desc;
+						isFound = true;
+						break;
+					}
+				}
+				
+				if (!isFound) {
+					toOutput += "<br><br><h3>Content not available</h3>";
+				}
+				document.getElementById("content").innerHTML = toOutput;
+    }
+};
+
+xmlhttp.open("GET", "desc.json", true);
+xmlhttp.send();
+</script>
 
 </body>

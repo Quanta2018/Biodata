@@ -143,6 +143,10 @@ a:hover{
 	padding-left: 20px;
 }
 
+#content {
+	text-align: center;
+}
+
 button {
 	position: absolute;
 	top: 37.4px;
