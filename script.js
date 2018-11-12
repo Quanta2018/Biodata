@@ -5,8 +5,6 @@ for (var i = 0; i < absen.length; i++) {
   var direksi = 'img/' + absen[i] + '.png';
   var img = document.createElement('img');
   img.setAttribute('src', direksi);
-	
-	// just need to refresh this file one more time
   imgs += '<a href="detail.html?absen=' + absen[i] + '">' + img.outerHTML + '</a>';
 }
 
