@@ -5,7 +5,7 @@ for (var i = 0; i < absen.length; i++) {
   var direksi = 'img/' + absen[i] + '.png';
   var img = document.createElement('img');
   img.setAttribute('src', direksi);
-  imgs += '<a href="detail.php?absen=' + absen[i] + '">' + img.outerHTML + '</a>';
+  imgs += '<a href="https://quanta2018.com/Biodata/detail.php?absen=' + absen[i] + '">' + img.outerHTML + '</a>';
 }
 
 var column = document.getElementById('column');
