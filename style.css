@@ -139,8 +139,8 @@ a:hover{
 	text-align: left;
 	color: #161743;
 	position: absolute;
-	top: 264px;
-	left: 140px;
+	padding-top: 35px;
+	padding-left: 20px;
 }
 
 button {
