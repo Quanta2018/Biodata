@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-
-<?php
-	$absen = $_GET['absen'];
-?>
-
 <head>
 <title>QUANTA 2018</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -37,11 +32,26 @@
 </div>
 
 <script>
+function getSearchParameters() {
+      var prmstr = window.location.search.substr(1);
+      return prmstr != null && prmstr != "" ? transformToAssocArray(prmstr) : {};
+}
+
+function transformToAssocArray( prmstr ) {
+    var params = {};
+    var prmarr = prmstr.split("&");
+    for ( var i = 0; i < prmarr.length; i++) {
+        var tmparr = prmarr[i].split("=");
+        params[tmparr[0]] = tmparr[1];
+    }
+    return params;
+}
+
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
 				var listMembers = JSON.parse(this.responseText);
-				var absen = "<?php echo $absen ?>";
+		var absen = getSearchParameters()["absen"];
 				var toOutput = '';
 				var isFound = false;
 				

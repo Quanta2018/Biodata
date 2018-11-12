@@ -7,7 +7,7 @@ for (var i = 0; i < absen.length; i++) {
   img.setAttribute('src', direksi);
 	
 	// just need to refresh this file one more time
-  imgs += '<a href="https://quanta2018.com/Biodata/detail.php?absen=' + absen[i] + '">' + img.outerHTML + '</a>';
+  imgs += '<a href="detail.html?absen=' + absen[i] + '">' + img.outerHTML + '</a>';
 }
 
 var column = document.getElementById('column');
