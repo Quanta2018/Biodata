@@ -24,7 +24,12 @@ xmlhttp.onreadystatechange = function() {
 				for (i = 0; i < listMembers.length; ++i) {
 					if (listMembers[i].absen == absen) {
 						toOutput += '<img src="img/' + absen + '.png" alt="" /><br>';
-						toOutput += '<h2>' + listMembers[i].nama + '</h2>' + listMembers[i].desc;
+						toOutput += '<p><b>Nama :</b> ' + listMembers[i].fullname + '</p>';
+						toOutput += '<p><b>Panggilan :</b> ' + listMembers[i].nickname + '</p>';
+						toOutput += '<p><b>Tanggal Lahir :</b> ' + listMembers[i].birthdate + '</p>';
+						toOutput += '<p><b>ID Line :</b> ' + listMembers[i].lineid + '</p>';
+						toOutput += '<p><b>Instagram :</b> ' + listMembers[i].instaname + '</p>';
+						toOutput += '<p><b>Pesan:</b> ' + listMembers[i].desc + '</p>';
 						isFound = true;
 						break;
 					}
