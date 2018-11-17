@@ -121,8 +121,23 @@ img.nav-header {
 	left: 495px;
 }
 
-a:hover{
-	color: white;
+.quanta:hover, .quanta:visited, .quanta:link, .quanta:active{
+	color:#ffffff;
+	text-decoration: none;
+}
+
+.bbq:hover, .bbq:visited, .bbq:link, .bbq:active{
+	color:#ffffff;
+	text-decoration: none;
+}
+
+.gallery:hover, .gallery:visited, .gallery:link, .gallery:active{
+	color:#ffffff;
+	text-decoration: none;
+}
+
+.biodata:hover, .biodata:visited, .biodata:link, .biodata:active{
+	color:#ffffff;
 	text-decoration: none;
 }
 
