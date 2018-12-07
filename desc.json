@@ -1671,6 +1671,16 @@
 		"desc":"Saya berharap saya dapat menggunakan apa yang saya dapatkan selama kuliah di saat mendatang. Saya harap quanta menjadi wadah bagi angkatan 2018 yang dapat menjalin hubungan agar saling menopang dan menguatkan"
 	}
 	,
+	{	"absen":"528",
+		"fullname":"Piawai Said Umbara",
+		"nickname":"Pisa",
+		"birthdate":"21 Mei 1989",
+		"lineid":"piawaisaid",
+		"instaname":"-",
+		"desc":"Bisa jadi pribadi yang lebih baik lagi ke depannya."
+	}
+	,
+	,
 	{	"absen":"529",
 		"fullname":"Putri Rissa Anjani",
 		"nickname":"Risaa",
@@ -2958,6 +2968,15 @@
 		"desc":"Mudah-mudahan bisa survive sampai lulus. Amin"
 	}
 	,
+	{	"absen":"843",
+		"fullname":"William Limanto",
+		"nickname":"William",
+		"birthdate":"5 November 2000",
+		"lineid":"-",
+		"instaname":"-",
+		"desc":"Semoga Quanta sukses."
+	}
+	,
 	{	"absen":"844",
 		"fullname":"Yosia Anugrah",
 		"nickname":"Yosia",
@@ -2975,5 +2994,13 @@
 		"instaname":"-",
 		"desc":"Saya Yoga. Saya berharap semuanya bisa menjadi manusia yang lebih baik lagi kedepannya."
 	}
-
+	,
+	{	"absen":"902",
+		"fullname":"Ayyasy Fikri Hariri",
+		"nickname":"Fikri",
+		"birthdate":"20 Agustus 2000",
+		"lineid":"-",
+		"instaname":"fikyas99",
+		"desc":"Semoga Quanta sukses."
+	}
 ]
